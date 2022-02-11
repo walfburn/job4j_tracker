@@ -4,12 +4,12 @@ public class DummyDic {
 
     public String engToRus(String eng) {
         eng = "permission";
-        return eng;
+        return "Неизвестное слово. " + eng;
     }
 
     public static void main(String[] args) {
         DummyDic dictionary = new DummyDic();
         String word = dictionary.engToRus("");
-        System.out.println("Неизвестное слово. " + word);
+        System.out.println(word);
     }
 }
