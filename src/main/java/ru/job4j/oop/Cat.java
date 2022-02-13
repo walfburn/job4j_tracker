@@ -2,18 +2,9 @@ package ru.job4j.oop;
 
 public class Cat {
 
-    public String sound() {
-        return "may may";
-    }
-
     private String food;
 
     private String name;
-
-    public void show() {
-        System.out.println(this.food);
-        System.out.println(this.name);
-    }
 
     public void giveNick(String nick) {
         this.name = nick;
@@ -21,6 +12,15 @@ public class Cat {
 
     public void eat(String meat) {
         this.food = meat;
+    }
+
+    public String sound() {
+        return "may may";
+    }
+
+    public void show() {
+        System.out.println(this.food);
+        System.out.println(this.name);
     }
 
     public static void main(String[] args) {
