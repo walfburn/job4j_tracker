@@ -20,10 +20,10 @@ public class TriangleTest {
     @Test
     public void testFail() {
         Point a = new Point(0, 0);
-        Point b = new Point(-1, -1);
-        Point c = new Point(1, 1);
+        Point b = new Point(0, 0);
+        Point c = new Point(0, 0);
         Triangle triangle = new Triangle(a, b, c);
         double result = triangle.area();
-        assertThat(result, closeTo(4, 0.001));
+        assertThat(result, closeTo(0, 0.001));
     }
 }
