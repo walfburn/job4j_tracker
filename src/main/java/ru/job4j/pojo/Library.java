@@ -15,6 +15,7 @@ public class Library {
             Book book = books[index];
             System.out.println(book.getName() + ". Page count: " + book.getPageCount());
         }
+
         System.out.println("\n" + "Переставим местами значения в ячейках 0 и 3");
         books[0] = bookFour;
         books[3] = bookOne;
@@ -22,6 +23,7 @@ public class Library {
             Book book = books[index];
             System.out.println(book.getName() + ". Page count: " + book.getPageCount());
         }
+
         System.out.println("\n" + "Вывод  книг с именем \"Clean code\"");
         for (int index = 0; index < books.length; index++) {
             Book book = books[index];
