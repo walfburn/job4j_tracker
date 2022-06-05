@@ -11,6 +11,7 @@ public class Library {
         books[1] = bookTwo;
         books[2] = bookThree;
         books[3] = bookFour;
+
         for (int index = 0; index < books.length; index++) {
             Book book = books[index];
             System.out.println(book.getName() + ". Page count: " + book.getPageCount());
